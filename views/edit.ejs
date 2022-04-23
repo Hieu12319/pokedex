@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head.ejs") %>
+<body>
+   
+    <div class="container">
+        <h1> <%= poke.name %> <a href="/"> Back to Index Page</a></h1>
+    <h2>
+        
+  <img src="<%= poke.img %>"></h2>
+
+
+    <form action="/<%= index %>?_method=PUT" method="post">
+        Name: <input type="text" name="name" placeholder="<%= poke.name %>" > <br/>
+        HP: <input type="text" name="name" placeholder="<%= poke.stats.hp %>"> <br/>
+        Attack: <input type="text" name="name" placeholder="<%= poke.stats.attack %>"> <br/>
+        Type: <input type="text" name="type[]" placeholder="type 1"><input type="text" name="type[]" placeholder="type 2"> <br/>
+        Weight: <input type="text" name="misc[weight]" placeholder="weight" > <br/>
+        Height: <input type="text" name="misc[height]" placeholder="height" > <br/>
+        Image Link: <input type="text" name="img"> <br/>
+    </form>
+        <input type="submit" value="Update Pokemon" id="submit-button"></button>
+    </form>
+</div>
+     
+</body>
+</html>

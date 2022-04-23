@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head.ejs") %>
+<body>
+   
+    <div class="container">
+        <h1> Add Your Pokemon!</h1>
+    <h2>
+        
+    <form action="/<%= index %>?_method=PUT" method="post">
+        Name: <input type="text" name="name" placeholder="Pokemons' Name" required > <br/>
+        HP: <input type="text" name="name" placeholder="HP" required > <br/>
+        Attack: <input type="text" name="name" placeholder="Attack" > <br/>
+        Type: <input type="text" name="type[]" placeholder="type 1"><input type="text" name="type[]" placeholder="type 2"> <br/>
+        Weight: <input type="text" name="weight" placeholder="weight" > <br/>
+        Height: <input type="text" name="height" placeholder="height" > <br/>
+        Image Link: <input type="text" name="img"> <br/>
+        <input type="submit" value="Add Pokemon" id="submit-button"></button>
+    </form></div>
+       </h2>
+</body>
+</html>

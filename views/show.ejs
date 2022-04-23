@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head.ejs") %>
+<body>
+    
+    <nav>
+        <a href="./<%= index %>/delete">Delete Pokemon</a>
+        <a href="/">Back to Index</a>
+        <a href="./<%= index %>/edit">Edit Pokemon</a>
+    </nav>
+     <h1><%= Pokemon.name %></h1>
+    <h2><img src="<%= Pokemon.img%>"></h2>
+   <h3><ul>Pokemon Type: <%= Pokemon.type %> 
+        <p>Stats:
+            <ul>HP: <%=Pokemon.stats.hp%></ul>
+            <ul>Attack: <%=Pokemon.stats.attack%></ul>
+            <ul>Defense: <%=Pokemon.stats.defense%></ul>
+        </p>
+    
+
+
+</ul></h3> 
+
+
+   
+  
+    
+    
+</body>
+</html>
